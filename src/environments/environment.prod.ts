@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiUrl: 'https://api.suaaplicacao.com'
+    baseUrl: 'https://bookstore-mcmn-9beb01ff3570.herokuapp.com/'
 };

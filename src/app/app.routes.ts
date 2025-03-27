@@ -1,15 +1,19 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './components/views/home/home.component';
-import { CategoriaReadComponent } from './components/views/categoria/categoria-read/categoria-read.component';
 
 export const routes: Routes = [
     {
         path: '',
-        component: HomeComponent
+        loadComponent: () =>
+            import('./components/views/home/home.component').then(
+                (m) => m.HomeComponent
+            )
     },
     {
         path: 'categorias',
-        component: CategoriaReadComponent
+        loadComponent: () =>
+            import('./components/views/categoria/categoria-read/categoria-read.component').then(
+                (m) => m.CategoriaReadComponent
+            )
     }
-    
+
 ];

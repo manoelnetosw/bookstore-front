@@ -2,6 +2,16 @@
   height: 85%;
 }
 
-i {
+.material-icons {
   padding-right: 0.5rem;
+}
+
+@media (max-width: 450px) {
+  .material-icons {
+    font-size: 1rem;
+    padding-right: 0.25rem;
+  }
+  .nav-text {
+    font-size: 0.75rem;
+  }
 }
