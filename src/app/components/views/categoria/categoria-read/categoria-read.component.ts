@@ -3,6 +3,7 @@ import { MatTableModule } from '@angular/material/table';
 import { CategoriaService } from '../categoria.service';
 import { Categoria } from '../categoria.model';
 import { MatButtonModule } from '@angular/material/button';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-categoria-read',
@@ -17,7 +18,7 @@ export class CategoriaReadComponent {
 
   displayedColumns: string[] = ["id", "nome", "descricao", "livros", "acoes"];
 
-  constructor(private service: CategoriaService) { }
+  constructor(private service: CategoriaService, private router: Router) { }
 
   ngOnInit(): void {
     this.findAll();
@@ -29,4 +30,9 @@ export class CategoriaReadComponent {
       this.categorias = resposta;
     });
   }
+
+  navegarParaCategoriaCreate(): void {
+    this.router.navigate(["categoria/create"]);
+  }
+
 }

@@ -14,6 +14,13 @@ export const routes: Routes = [
             import('./components/views/categoria/categoria-read/categoria-read.component').then(
                 (m) => m.CategoriaReadComponent
             )
+    },
+    {
+        path: 'categoria/create',
+        loadComponent: () =>
+            import('./components/views/categoria/categoria-create/categoria-create.component').then(
+                (m) => m.CategoriaCreateComponent
+            )
     }
 
 ];
