@@ -5,7 +5,6 @@ import { NavComponent } from './components/template/nav/nav.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [
     HeaderComponent,
     FooterComponent,

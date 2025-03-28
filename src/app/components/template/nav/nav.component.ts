@@ -6,7 +6,6 @@ import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-nav',
-  standalone: true,
   imports: [
     RouterModule,
     MatSidenavModule,

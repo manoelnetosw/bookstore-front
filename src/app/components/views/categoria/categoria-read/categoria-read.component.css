@@ -2,13 +2,13 @@
   margin: 1rem;
 }
 
-.content-table {
-  margin: 1rem;
-}
-
 .title {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+button {
+  margin-bottom: 1rem;
 }
 
 .title h1 {
@@ -30,4 +30,26 @@
   .table td {
     padding: 0.25rem 0.5rem; /* Reduz o espaçamento em telas menores */
   }
+}
+
+.livros {
+  color: royalblue;
+}
+
+.edit {
+  color: rgb(232, 143, 34);
+}
+
+.delete {
+  color: rgb(255, 124, 124);
+}
+
+.mat-column-livros,
+.mat-column-acoes {
+  width: 6rem;
+  text-align: center;
+}
+
+.mat-column-acoes a {
+  margin: 0.25rem;
 }
