@@ -1,0 +1,33 @@
+form {
+  width: 75%;
+  margin: 1rem auto 0 auto;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.title h1 {
+  font-size: 2rem;
+  color: rgb(194, 194, 194);
+  font-weight: 500;
+}
+
+.form {
+  width: 100%;
+}
+
+.buttons {
+  width: 100%;
+  text-align: left;
+}
+
+button {
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
